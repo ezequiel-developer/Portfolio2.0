@@ -101,56 +101,67 @@ const Projetos = () => {
             {cards.map((card, index) => (
               <div
                 key={index}
-                className="w-full flex-shrink-0 px-4 py-12 md:px-16  bg-[#151515] rounded-lg shadow-lg flex flex-col md:flex-row "
+                className="w-full flex-shrink-0  px-4 py-10 md:px-16  bg-[#151515] rounded-lg shadow-lg flex flex-col md:flex-row "
               >
 
-                <img
-                  src={card.image}
-                  alt={card.title}
-                  className="w-full h-[380px] md:w-[300px]  md:h-[300px]   object-cover rounded-lg mb-4 md:mb-0 md:mr-4"
-                />
-                <div className="flex flex-col justify-between fl  ex-grow">
-                  <div>
-                    <h3 className="text-xl font-semibold mb-2 text-center md:text-left text-white">
-                      {card.title}
-                    </h3>
-                    <p className="text-gray-300 text-justify text-sm">
-                      {card.content}
-                    </p>
-                    <div className="flex flex-wrap justify-center md:justify-start space-x-2 mt-4">
-                      {card.techs.map((tech, techIndex) => (
-                        <span
-                          key={techIndex}
-                          className="bg-black text-sm text-white px-4 mb-2 py-1 rounded-full"
-                        >
-                          {tech}
-                        </span>
+                <div className='flex flex-col md:flex-row'>
 
+                  <div className='md:w-[40%] h-[380px] md:h-[300px] justify-center flex'>
+                  <img
+                    src={card.image}
+                    alt={card.title}
+                    className='h-full w-[250px] object-cover  rounded-xl'
+                  />
 
-                      ))}
-                    </div>
                   </div>
 
-                  {/* Botões Ver Código e Ver Site fixados na parte inferior */}
-                  <div className="flex justify-center gap-12 space-x-4 mt-6">
-                    <a href={card.codeLink} target="_blank" rel="noopener noreferrer">
-
-                      <button className="flex flex-col items-center text-white text-sm">
-                        <FiCode size={30} />
-                        Repositório
-                      </button>
-                    </a>
 
 
-                    <a href={card.siteLink} target="_blank" rel="noopener noreferrer">
-                      <button className="flex flex-col items-center text-white text-sm">
-                        <AiOutlineEye size={30} />
-                        Ver Projeto
-                      </button>
-                    </a>
+                  <div className=" mt-4 md:mt-0 flex flex-col justify-between flex-grow md:w-[60%]">
+                    <div>
+                      <h3 className="text-xl font-semibold mb-2 text-center md:text-left text-white">
+                        {card.title}
+                      </h3>
+                      <p className="text-gray-300 text-justify text-sm">
+                        {card.content}
+                      </p>
+                      <div className="flex flex-wrap justify-center md:justify-start space-x-2 mt-4">
+                        {card.techs.map((tech, techIndex) => (
+                          <span
+                            key={techIndex}
+                            className="bg-black text-sm text-white px-4 mb-2 py-1 rounded-full"
+                          >
+                            {tech}
+                          </span>
+
+
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Botões Ver Código e Ver Site fixados na parte inferior */}
+                    <div className="flex justify-center gap-12 space-x-4 mt-6">
+                      <a href={card.codeLink} target="_blank" rel="noopener noreferrer">
+
+                        <button className="flex flex-col items-center text-white text-sm">
+                          <FiCode size={30} />
+                          Repositório
+                        </button>
+                      </a>
+
+
+                      <a href={card.siteLink} target="_blank" rel="noopener noreferrer">
+                        <button className="flex flex-col items-center text-white text-sm">
+                          <AiOutlineEye size={30} />
+                          Ver Projeto
+                        </button>
+                      </a>
+                    </div>
+
                   </div>
 
                 </div>
+
               </div>
             ))}
           </div>
