@@ -104,7 +104,7 @@ const Projetos = () => {
                 className="w-full flex-shrink-0  px-4 py-10 md:px-16  bg-[#151515] rounded-lg shadow-lg flex flex-col md:flex-row "
               >
 
-                <div className='flex flex-col md:flex-row'>
+                <div className='flex flex-col md:flex-row gap-4'>
 
                   <div className='md:w-[40%] h-[380px] md:h-[300px] justify-center flex'>
                   <img
