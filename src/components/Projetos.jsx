@@ -10,7 +10,7 @@ const Projetos = () => {
   const cards = [
 
     {
-      title: 'Finanças',
+      title: 'Finanças (em desenvolvimento)',
       techs: ['ReactJS', 'TailwindCSS'],
       content: ' O projeto é uma aplicação dedicada ao registro de receitas, despesas e orçamentos, com a capacidade de gerar relatórios detalhados para uma empresa de serviços náuticos. Atualmente, os dados são armazenados no localStorage, o que permite uma experiência de uso contínua sem a necessidade de backend imediato. No entanto, tenho planos de integrar um banco de dados no futuro para uma gestão ainda mais robusta e adicionar recursos avançados como filtros dinâmicos.',
       image: './projeto-financas.jpg',
@@ -49,6 +49,14 @@ const Projetos = () => {
       codeLink: 'https://github.com/ezequiel-developer/portfolio1.0/settings/pages',
       siteLink: 'https://ezequiel-developer.github.io/portfolio1.0//'
     },
+    {
+      title: 'CineExplorer Filmes / Séries (em desenvolvimento)',
+      techs: ['ReactJS', 'TailwindCSS', 'API TMDb'],
+      content: 'Desenvolvido com ReactJS e TailwindCSS, utilizando a API do TMDB para oferecer uma navegação completa pelo universo dos filmes e séries. Através da plataforma, é possível acessar informações detalhadas de cada filme, incluindo elenco, sinopse, avaliações e muito mais. O design responsivo e intuitivo torna a experiência de explorar o catálogo de filmes simples e agradável.',
+      image: './projeto-filmes.jpg',
+      codeLink: 'https://github.com/ezequiel-developer/ProjetoFilmesReactJS',
+      siteLink: 'https://ezequiel-developer.github.io/ProjetoFilmesReactJS/'
+    }
 
   ];
 
